@@ -27,7 +27,8 @@ function love.keypressed(key, scancode, isrepeat)
 
 -- as per docs dt is type number, the time since last update in seconds
 function love.update(dt)
-    --continuous increase (sensitive)
+    --staggered sound (sensitive)
+    --can this be made "smooth"?
     if love.keyboard.isDown("up")
     then
         beep()

@@ -1,5 +1,4 @@
 function drawMovingPlatform(mode, x, y, width, height, posX, posY)
-    --motivation: can't rotate directly, but can manip coordinate system
     love.graphics.push() -- what is this, assumption, pushing on to mod-stack
     love.graphics.translate(x + posX, y + posY) -- moves drawing start point to x,y
     love.graphics.rectangle(mode, 0, 0, width, height)
